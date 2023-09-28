@@ -10,6 +10,11 @@ Existing SSL methods lack capabilities of “understanding” the foundation of 
 <br/>
 
 
+## Method
+
+<br/>
+<p align="center"><img width="100%" src="images/method.png" /></p>
+<br/>
 
 ## Publication
 <b>Towards Foundation Models Learned from Anatomy in Medical Imaging via Self-Supervision </b> <br/>
