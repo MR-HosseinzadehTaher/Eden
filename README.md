@@ -21,3 +21,28 @@ International Conference on Medical Image Computing and Computer Assisted Interv
 [Paper](https://arxiv.org/pdf/2309.15358.pdf) | [Code](https://github.com/MR-HosseinzadehTaher/Eden) | [Poster](#) | [Slides](#) | Presentation ([YouTube](#))
 
 
+## Citation
+If you use this code or use our pre-trained weights for your research, please cite our paper:
+```
+@misc{taher2023foundation,
+      title={Towards Foundation Models Learned from Anatomy in Medical Imaging via Self-Supervision}, 
+      author={Mohammad Reza Hosseinzadeh Taher and Michael B. Gotway and Jianming Liang},
+      year={2023},
+      eprint={2309.15358},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
+## Acknowledgement
+This research has been supported in part by ASU and Mayo Clinic through a
+Seed Grant and an Innovation Grant, and in part by the NIH under Award
+Number R01HL128785. The content is solely the responsibility of the authors
+and does not necessarily represent the official views of the NIH. This work has
+utilized the GPUs provided in part by the ASU Research Computing and in
+part by the Bridges-2 at Pittsburgh Supercomputing Center through allocation
+BCS190015 and the Anvil at Purdue University through allocation MED220025
+from the Advanced Cyberinfrastructure Coordination Ecosystem: Services &
+Support (ACCESS) program, which is supported by National Science Foundation
+grants #2138259, #2138286, #2138307, #2137603, and #2138296. The content
+of this paper is covered by patents pending.
+
