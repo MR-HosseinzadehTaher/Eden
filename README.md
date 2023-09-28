@@ -12,7 +12,7 @@ Existing SSL methods lack capabilities of “understanding” the foundation of 
 
 ## Method
 
-
+Our SSL strategy gradually decomposes and perceives the anatomy in a coarse-to-fine manner. Our **Anatomy Decomposer (AD)** decomposes the anatomy into a hierarchy of parts with granularity level $n \in {0,1,...}$ at each training stage. Thus, anatomical structures of finer-grained granularity will be incrementally presented to the model as the input. Given image $I$, we pass it to AD to get a random anchor $x$. We augment $x$ to generate two views (positive samples), and pass them to two encoders to get their features. To avoid semantic collision in training objective, our **Purposive Pruner** removes semantically similar anatomical structures across images to anchor $x$ from the memory bank. Contrastive loss is then calculated using positive samples’ features and the pruned memory bank. The figure shows pretraining at $n=4$.
 <br/>
 <p align="center"><img width="100%" src="images/method.png" /></p>
 <br/>
