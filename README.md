@@ -18,4 +18,6 @@ Existing SSL methods lack capabilities of “understanding” the foundation of 
 <sup>1 </sup>Arizona State University, <sup>2 </sup>Mayo Clinic <br/>
 International Conference on Medical Image Computing and Computer Assisted Intervention ([MICCAI 2023](https://www.miccai2023.org/en/)); Domain Adaptation and Representation Transfer <br/>
 
-[Paper]([https://arxiv.org/pdf/2108.05930.pdf](https://arxiv.org/pdf/2309.15358.pdf)) | [Code]([https://github.com/MR-HosseinzadehTaher/BenchmarkTransferLearning](https://github.com/MR-HosseinzadehTaher/Eden)) | [Poster](#) | [Slides](#) | Presentation ([YouTube](#), [YouKu](#))
+[Paper](https://arxiv.org/pdf/2309.15358.pdf) | [Code](https://github.com/MR-HosseinzadehTaher/Eden) | [Poster](#) | [Slides](#) | Presentation ([YouTube](#))
+
+
