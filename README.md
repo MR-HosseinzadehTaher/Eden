@@ -23,22 +23,22 @@ Our SSL strategy gradually decomposes and perceives the anatomy in a coarse-to-f
 
 1. **Adam provides superior performance over fully/self-supervised methods.**
 <br/>
-<p align="center"><img width="80%" src="images/11.png" /></p>
+<p align="center"><img width="90%" src="images/SOTA.png" /></p>
 <br/>
 
-2. **Adam enhances annotation efficiency, revealing promise for fewshot learning.**
+2. **Adam enhances annotation efficiency, revealing promise for few-shot learning.**
 <br/>
-<p align="center"><img width="90%" src="images/22.png" /></p>
+<p align="center"><img width="90%" src="images/Few_shot.png" /></p>
 <br/>
 
 3. **Adam preserves locality and compositionality properties, which are intrinsic to anatomical structures and critical for understanding anatomy, in its embedding space.**
 <br/>
-<p align="center"><img width="90%" src="images/33.png" /></p>
+<p align="center"><img width="90%" src="images/locality_compositionality.png" /></p>
 <br/>
 
 4. **Ablation studies on (1) Eve’s accuracy in anatomy understanding, (2) effect of anatomy decomposer, (3) effect of purposive pruner, and (4) adaptability of our framework to other imaging modalities.**
 <br/>
-<p align="center"><img width="90%" src="images/44.png" /></p>
+<p align="center"><img width="90%" src="images/ablation.png" /></p>
 <br/>
 
 ## Installation
