@@ -139,7 +139,7 @@ print("missing keys:", msg.missing_keys)
 
 
 ## Citation
-If you use this code or use our pre-trained weights for your research, please cite our paper:
+If you use this code or use our pretrained weights for your research, please cite our paper:
 ```
 @misc{taher2023foundation,
       title={Towards Foundation Models Learned from Anatomy in Medical Imaging via Self-Supervision}, 
