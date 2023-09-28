@@ -19,14 +19,36 @@ Our SSL strategy gradually decomposes and perceives the anatomy in a coarse-to-f
 
 
 
-## Publication
-<b>Towards Foundation Models Learned from Anatomy in Medical Imaging via Self-Supervision </b> <br/>
+## Major results from our work
 
-[Mohammad Reza Hosseinzadeh Taher](https://github.com/MR-HosseinzadehTaher)<sup>1</sup>, [Michael B. Gotway](https://www.mayoclinic.org/biographies/gotway-michael-b-m-d/bio-20055566)<sup>2</sup>, [Jianming Liang](https://chs.asu.edu/jianming-liang)<sup>1</sup><br/>
-<sup>1 </sup>Arizona State University, <sup>2 </sup>Mayo Clinic <br/>
-International Conference on Medical Image Computing and Computer Assisted Intervention ([MICCAI 2023](https://www.miccai2023.org/en/)); Domain Adaptation and Representation Transfer <br/>
+1. **Adam provides superior performance over fully/self-supervised methods.**
+<br/>
+<p align="center"><img width="80%" src="images/11.png" /></p>
+<br/>
 
-[Paper](https://arxiv.org/pdf/2309.15358.pdf) | [Code](https://github.com/MR-HosseinzadehTaher/Eden) | [Poster](#) | [Slides](#) | Presentation ([YouTube](#))
+2. **Adam enhances annotation efficiency, revealing promise for fewshot learning.**
+<br/>
+<p align="center"><img width="90%" src="images/22.png" /></p>
+<br/>
+
+3. **Adam preserves locality and compositionality properties, which are intrinsic to anatomical structures and critical for understanding anatomy, in its embedding space.**
+<br/>
+<p align="center"><img width="90%" src="images/33.png" /></p>
+<br/>
+
+4. **Ablation studies on (1) Eve’s accuracy in anatomy understanding, (2) effect of anatomy decomposer, (3) effect of purposive pruner, and (4) adaptability of our framework to other imaging modalities.**
+<br/>
+<p align="center"><img width="90%" src="images/44.png" /></p>
+<br/>
+
+## Installation
+Clone the repository and install dependencies using the following command:
+```bash
+$ git clone https://github.com/MR-HosseinzadehTaher/Eden.git
+$ cd Eden-main/
+$ pip install -r requirements.txt
+```
+
 
 
 ## Citation
