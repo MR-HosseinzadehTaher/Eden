@@ -76,3 +76,7 @@ Support (ACCESS) program, which is supported by National Science Foundation
 grants #2138259, #2138286, #2138307, #2137603, and #2138296. The content
 of this paper is covered by patents pending.
 
+## License
+
+Released under the [ASU GitHub Project License](./LICENSE).
+
