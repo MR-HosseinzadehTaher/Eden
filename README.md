@@ -2,9 +2,18 @@
 
 This repository provides a PyTorch implementation of the [Towards Foundation Models Learned from Anatomy in Medical Imaging via Self-Supervision](https://arxiv.org/pdf/2309.15358.pdf).
 
- 
+ <div align="center">
 
-## <img src="https://github.com/alxrm/youtube-play-icon/blob/master/art/play.gif?raw=true" alt="Play Logo" height="50px" width="50px" /> [ Watch the Paper Presentation ](https://youtu.be/1ky57hn0aRg)
+## <img src="https://github.com/alxrm/youtube-play-icon/blob/master/art/play.gif?raw=true" alt="Play Logo" height="50px" width="50px" /> [ Watch the Paper Presentation ](https://youtu.be/1ky57hn0aRg) 
+
+</div>
+
+
+
+<p align="center"> <img width="65%" src="images/BestPaper.png" /> </p>
+
+
+
 
 
 
