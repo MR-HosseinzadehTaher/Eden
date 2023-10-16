@@ -4,7 +4,7 @@ This repository provides a PyTorch implementation of the [Towards Foundation Mod
 
  <div align="center">
 
-## <img src="https://github.com/alxrm/youtube-play-icon/blob/master/art/play.gif?raw=true" alt="Play Logo" height="45px" width="45px" /> [ Watch the Paper Presentation ](https://youtu.be/1ky57hn0aRg) 
+## <img src="https://github.com/alxrm/youtube-play-icon/blob/master/art/play.gif?raw=true" alt="Play Logo" width="10%" /> <div align="center"> [ Watch the Paper Presentation ](https://youtu.be/1ky57hn0aRg) </div>
 
 </div>
 
