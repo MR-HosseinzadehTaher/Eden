@@ -10,7 +10,6 @@ We devise a novel self-supervised learning (SSL) strategy that underpins the dev
 
 <p align="center"> <img width="65%" src="images/BestPaper.png" /> </p>
 
-
 ## Publication
 <b>Towards Foundation Models Learned from Anatomy in Medical Imaging via Self-Supervision </b> <br/>
 
@@ -18,8 +17,8 @@ We devise a novel self-supervised learning (SSL) strategy that underpins the dev
 <sup>1 </sup>Arizona State University, <sup>2 </sup>Mayo Clinic <br/>
 International Conference on Medical Image Computing and Computer Assisted Intervention ([MICCAI 2023](https://conferences.miccai.org/2023/en/)); <br/> Domain Adaptation and Representation Transfer <br/>
 
-[Paper](https://arxiv.org/pdf/2309.15358.pdf) | [Code](https://github.com/MR-HosseinzadehTaher/Eden) | [Poster](http://www.cs.toronto.edu/~liang/Publications/DART21/) | **Oral Presentation ([YouTube](https://youtu.be/1ky57hn0aRg))**
-
+[Paper](https://arxiv.org/pdf/2309.15358.pdf) | [Code](https://github.com/MR-HosseinzadehTaher/Eden) | [Poster](http://www.cs.toronto.edu/~liang/Publications/) | [Oral Presentation](https://youtu.be/1ky57hn0aRg) 
+:trophy: ${\color{red} {\textbf{Best Paper Award (Runner-up)}}}$
 
 
 ## Major results from our work
