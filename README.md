@@ -4,7 +4,7 @@
 
 We devise a novel self-supervised learning (SSL) strategy that underpins the development of powerful models foundational to medical imaging via learning anatomy. Our approach not only generates **highly generalizable pretrained models** but also, in contrast to existing SSL methods, yields **dense anatomical embeddings** possessing essential properties of locality and compositionality, making them semantically meaningful for anatomy understanding.
 
-<p align="center"><img width="90%" src="images/Adam_Eve.png" /></p>
+<p align="center"><img src="images/Adam_Eve.png" /></p>
 
 ## Publication
 
