@@ -2,7 +2,9 @@
 
 --------------------------------------------------------------------------------
 
-We devise a novel self-supervised learning (SSL) strategy that underpins the development of powerful models foundational to medical imaging via learning anatomy. Our approach not only generates **highly generalizable pretrained models** but also, in contrast to existing SSL methods, yields **dense anatomical embeddings** possessing essential properties of locality and compositionality, making them semantically meaningful for anatomy understanding.
+We devise a novel self-supervised learning (SSL) framework that underpins the development of powerful models foundational to medical imaging via learning anatomy. Our approach not only generates **highly generalizable pretrained models, nicknamed Adam (autodidactic
+dense anatomical models)** but also, in contrast to existing SSL methods, yields **dense anatomical embeddings, nicknamed Eve–v2 (embedding vectors)**, possessing essential properties of locality and compositionality, making them semantically meaningful for anatomy understanding.
+
 
 <p align="center"><img src="images/Adam_Eve.png" /></p>
 
