@@ -1,6 +1,46 @@
-# Towards Foundation Models Learned from Anatomy in Medical Imaging via Self-Supervision
+# Autodidactic dense anatomical models
 
 We devise a novel self-supervised learning (SSL) strategy that underpins the development of powerful models foundational to medical imaging via learning anatomy. Our approach not only generates **highly generalizable pretrained models** but also, in contrast to existing SSL methods, yields **dense anatomical embeddings** possessing essential properties of locality and compositionality, making them semantically meaningful for anatomy understanding.
+
+
+## Publication
+
+### Representing Part-Whole Hierarchies in Foundation Models by Learning Localizability, Composability, and Decomposability from Anatomy via Self-Supervision
+
+[Mohammad Reza Hosseinzadeh Taher](https://github.com/MR-HosseinzadehTaher)<sup>1</sup>, [Michael B. Gotway](https://www.mayoclinic.org/biographies/gotway-michael-b-m-d/bio-20055566)<sup>2</sup>, [Jianming Liang](https://chs.asu.edu/jianming-liang)<sup>1</sup><br/>
+<sup>1 </sup>Arizona State University, <sup>2 </sup>Mayo Clinic <br/>
+IEEE/CVF Conference on Computer Vision and Pattern Recognition ([CVPR](https://cvpr.thecvf.com/))
+
+[Paper](https://arxiv.org/pdf/) | [Code](https://github.com/MR-HosseinzadehTaher/Eden) | [Oral Presentation]()
+${\color{red} {\textbf{Accepted at CVPR 2024 [main conference]}}}$
+
+<br/>
+
+:star: ${\color{blue} {\textbf{Please download the pretrained Adam-v2 PyTorch model as follow. }}}$
+
+
+| Backbone | #Params. | Download |
+|  ----  | ----  |  ----  |
+| ConvNeXt-B | 89M | [Link](https://) |
+
+### Towards Foundation Models Learned from Anatomy in Medical Imaging via Self-Supervision 
+
+[Mohammad Reza Hosseinzadeh Taher](https://github.com/MR-HosseinzadehTaher)<sup>1</sup>, [Michael B. Gotway](https://www.mayoclinic.org/biographies/gotway-michael-b-m-d/bio-20055566)<sup>2</sup>, [Jianming Liang](https://chs.asu.edu/jianming-liang)<sup>1</sup><br/>
+<sup>1 </sup>Arizona State University, <sup>2 </sup>Mayo Clinic <br/>
+International Conference on Medical Image Computing and Computer Assisted Intervention ([MICCAI 2023](https://conferences.miccai.org/2023/en/)); <br/> Domain Adaptation and Representation Transfer <br/>
+
+[Paper](https://arxiv.org/pdf/2309.15358.pdf) | [Code](https://github.com/MR-HosseinzadehTaher/Eden) | [Oral Presentation](https://youtu.be/1ky57hn0aRg) 
+:trophy: ${\color{red} {\textbf{Best Paper Award (Runner-up)}}}$ 
+
+<br/>
+
+:star: ${\color{blue} {\textbf{Please download the pretrained Adam-v1 PyTorch model as follow. }}}$
+
+
+| Backbone | #Params. | Download |
+|  ----  | ----  |  ----  |
+| ResNet-50  | 25.6M | [Link](https://docs.google.com/forms/d/e/1FAIpQLSdHcnN6mLUEXebezyQZh3wE3u1RNtBBOpvjbQA8MNXXr9hdHQ/viewform?usp=sf_link) |
+
 
  <div align="center">
 
@@ -10,32 +50,11 @@ We devise a novel self-supervised learning (SSL) strategy that underpins the dev
 
 <p align="center"> <img width="65%" src="images/BestPaper.png" /> </p>
 
-## Publication
-### Towards Foundation Models Learned from Anatomy in Medical Imaging via Self-Supervision 
-
-[Mohammad Reza Hosseinzadeh Taher](https://github.com/MR-HosseinzadehTaher)<sup>1</sup>, [Michael B. Gotway](https://www.mayoclinic.org/biographies/gotway-michael-b-m-d/bio-20055566)<sup>2</sup>, [Jianming Liang](https://chs.asu.edu/jianming-liang)<sup>1</sup><br/>
-<sup>1 </sup>Arizona State University, <sup>2 </sup>Mayo Clinic <br/>
-International Conference on Medical Image Computing and Computer Assisted Intervention ([MICCAI 2023](https://conferences.miccai.org/2023/en/)); <br/> Domain Adaptation and Representation Transfer <br/>
-
-[Paper](https://arxiv.org/pdf/2309.15358.pdf) | [Code](https://github.com/MR-HosseinzadehTaher/Eden) | [Poster](http://www.cs.toronto.edu/~liang/Publications/) | [Oral Presentation](https://youtu.be/1ky57hn0aRg) 
-:trophy: ${\color{red} {\textbf{Best Paper Award (Runner-up)}}}$ 
-
-<br/>
-
-:star: ${\color{blue} {\textbf{Please download the pretrained Adam PyTorch model as follow. }}}$
-
-
-| Backbone | #Params. | Download |
-|  ----  | ----  |  ----  |
-| ResNet-50  | 25.6M | [Link](https://docs.google.com/forms/d/e/1FAIpQLSdHcnN6mLUEXebezyQZh3wE3u1RNtBBOpvjbQA8MNXXr9hdHQ/viewform?usp=sf_link) |
-
-
-
-
 
 ## Citation
 If you use this code or use our pretrained weights for your research, please cite our paper:
 ```
+
 @misc{taher2023foundation,
       title={Towards Foundation Models Learned from Anatomy in Medical Imaging via Self-Supervision}, 
       author={Mohammad Reza Hosseinzadeh Taher and Michael B. Gotway and Jianming Liang},
