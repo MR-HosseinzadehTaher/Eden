@@ -16,7 +16,7 @@ dense anatomical models)**, but also, in contrast to existing SSL methods, yield
 IEEE/CVF Conference on Computer Vision and Pattern Recognition ([CVPR](https://cvpr.thecvf.com/))
 
 Adam-v2: [Paper](https://arxiv.org/pdf/2404.15672) | [Code](https://github.com/MR-HosseinzadehTaher/Eden/tree/main/Adam-v2) | [Oral Presentation]()
-${\color{red} {\textbf{Accepted at CVPR 2024 [main conference]}}}$
+:boom: ${\color{red} {\textbf{Accepted at CVPR 2024 [main conference]}}}$
 
 <br/>
 
