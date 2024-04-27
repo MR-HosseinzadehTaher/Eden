@@ -58,6 +58,14 @@ Adam-v1: [Paper](https://arxiv.org/pdf/2309.15358.pdf) | [Code](https://github.c
 ## Citation
 If you use this code or use our pretrained weights for your research, please cite our paper:
 ```
+@misc{taher2024representing,
+      title={Representing Part-Whole Hierarchies in Foundation Models by Learning Localizability, Composability, and Decomposability from Anatomy via Self-Supervision}, 
+      author={Mohammad Reza Hosseinzadeh Taher and Michael B. Gotway and Jianming Liang},
+      year={2024},
+      eprint={2404.15672},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 
 @misc{taher2023foundation,
       title={Towards Foundation Models Learned from Anatomy in Medical Imaging via Self-Supervision}, 
