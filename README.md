@@ -15,7 +15,7 @@ dense anatomical models)**, but also, in contrast to existing SSL methods, yield
 <sup>1 </sup>Arizona State University, <sup>2 </sup>Mayo Clinic <br/>
 IEEE/CVF Conference on Computer Vision and Pattern Recognition ([CVPR](https://cvpr.thecvf.com/))
 
-[Paper](https://arxiv.org/pdf/) | [Code](https://github.com/MR-HosseinzadehTaher/Eden) | [Oral Presentation]()
+Adam-v2: [Paper](https://arxiv.org/pdf/2404.15672) | [Code](https://github.com/MR-HosseinzadehTaher/Eden/tree/main/Adam-v2) | [Oral Presentation]()
 ${\color{red} {\textbf{Accepted at CVPR 2024 [main conference]}}}$
 
 <br/>
@@ -33,7 +33,7 @@ ${\color{red} {\textbf{Accepted at CVPR 2024 [main conference]}}}$
 <sup>1 </sup>Arizona State University, <sup>2 </sup>Mayo Clinic <br/>
 International Conference on Medical Image Computing and Computer Assisted Intervention ([MICCAI 2023](https://conferences.miccai.org/2023/en/)); <br/> Domain Adaptation and Representation Transfer <br/>
 
-[Paper](https://arxiv.org/pdf/2309.15358.pdf) | [Code](https://github.com/MR-HosseinzadehTaher/Eden) | [Oral Presentation](https://youtu.be/1ky57hn0aRg) 
+Adam-v1: [Paper](https://arxiv.org/pdf/2309.15358.pdf) | [Code](https://github.com/MR-HosseinzadehTaher/Eden/tree/main/Adam-v1) | [Oral Presentation](https://youtu.be/1ky57hn0aRg) 
 :trophy: ${\color{red} {\textbf{Best Paper Award (Runner-up)}}}$ 
 
 <br/>
