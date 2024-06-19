@@ -5,17 +5,16 @@ dense anatomical models)**, but also, in contrast to existing SSL methods, yield
 
 <p align="center"><img src="images/Adam_Eve_v2.png" /></p>
 
-## Publication
+## Publication :boom: ${\color{red} {\textbf{Accepted at CVPR 2024 [main conference]}}}$
 
 ### Representing Part-Whole Hierarchies in Foundation Models by Learning Localizability, Composability, and Decomposability from Anatomy via Self-Supervision
+
 
 [Mohammad Reza Hosseinzadeh Taher](https://github.com/MR-HosseinzadehTaher)<sup>1</sup>, [Michael B. Gotway](https://www.mayoclinic.org/biographies/gotway-michael-b-m-d/bio-20055566)<sup>2</sup>, [Jianming Liang](https://chs.asu.edu/jianming-liang)<sup>1</sup><br/>
 <sup>1 </sup>Arizona State University, <sup>2 </sup>Mayo Clinic <br/>
 IEEE/CVF Conference on Computer Vision and Pattern Recognition ([CVPR](https://cvpr.thecvf.com/))
 
-Adam-v2: [Paper](https://arxiv.org/pdf/2404.15672) | [Code](https://github.com/MR-HosseinzadehTaher/Eden/tree/main/Adam-v2) | [Oral Presentation]()
-:boom: ${\color{red} {\textbf{Accepted at CVPR 2024 [main conference]}}}$
-
+<a href='https://arxiv.org/pdf/2404.15672'><img src='https://img.shields.io/badge/Paper-PDF-purple'></a> <a href='images/Adam_Eve_v2.png'><img src='https://img.shields.io/badge/Poster-PDF-blue'></a> <a href='https://github.com/MR-HosseinzadehTaher/Eden/tree/main/Adam-v2'><img src='https://img.shields.io/badge/Project-Page-Green'></a> [![Oral Presentation](https://badges.aleen42.com/src/youtube.svg)](https:) 
 <br/>
 
 :star: ${\color{blue} {\textbf{Please download the pretrained Adam-v2 PyTorch model as follow. }}}$
