@@ -20,9 +20,9 @@ IEEE/CVF Conference on Computer Vision and Pattern Recognition ([CVPR](https://c
 :star: ${\color{blue} {\textbf{Please download the pretrained Adam-v2 PyTorch model as follow. }}}$
 
 
-| Backbone | #Params. | Download |
-|  ----  | ----  |  ----  |
-| ConvNeXt-B | 89M | [Link](https://) |
+Model | Backbone | #Params. | Download |
+---- | ----  | ----  | ---- |
+<img alt="Static Badge" src="https://img.shields.io/badge/Adam-Version2-yellow"> | ConvNeXt-B | 89M | [Link](https://) |
 
 ## Requirements
 + Linux
