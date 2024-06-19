@@ -14,7 +14,7 @@ dense anatomical models)**, but also, in contrast to existing SSL methods, yield
 <sup>1 </sup>Arizona State University, <sup>2 </sup>Mayo Clinic <br/>
 IEEE/CVF Conference on Computer Vision and Pattern Recognition ([CVPR](https://cvpr.thecvf.com/))
 
-<a href='https://arxiv.org/pdf/2404.15672'><img src='https://img.shields.io/badge/Paper-PDF-purple'></a> <a href='images/Adam_Eve_v2.png'><img src='https://img.shields.io/badge/Poster-PDF-blue'></a> <a href='https://github.com/MR-HosseinzadehTaher/Eden/tree/main/Adam-v2'><img src='https://img.shields.io/badge/Project-Page-Green'></a> [![Oral Presentation](https://badges.aleen42.com/src/youtube.svg)](https:) 
+<a href='https://arxiv.org/pdf/2404.15672'><img src='https://img.shields.io/badge/Paper-PDF-purple'></a> <a href='images/Adam_Eve_v2.png'><img src='https://img.shields.io/badge/Poster-PNG-blue'></a> <a href='https://github.com/MR-HosseinzadehTaher/Eden/tree/main/Adam-v2'><img src='https://img.shields.io/badge/Project-Page-Green'></a> [![Oral Presentation](https://badges.aleen42.com/src/youtube.svg)](https:) 
 <br/>
 
 :star: ${\color{blue} {\textbf{Please download the pretrained Adam-v2 PyTorch model as follow. }}}$
