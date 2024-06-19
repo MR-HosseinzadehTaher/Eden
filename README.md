@@ -7,7 +7,7 @@ dense anatomical models)**, but also, in contrast to existing SSL methods, yield
 
 <p align="center"><img src="images/Adam_Eve.png" /></p>
 
-## Publication
+## Publications
 
 ### Representing Part-Whole Hierarchies in Foundation Models by Learning Localizability, Composability, and Decomposability from Anatomy via Self-Supervision
 
@@ -29,17 +29,19 @@ IEEE/CVF Conference on Computer Vision and Pattern Recognition ([CVPR](https://c
 <p align="center"><img src="images/Adam_Eve_v2.png" /></p>
 
 --------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 ### Towards Foundation Models Learned from Anatomy in Medical Imaging via Self-Supervision 
+
+:trophy: ${\color{red} {\textbf{Best Paper Award (Runner-up)}}}$ 
 
 [Mohammad Reza Hosseinzadeh Taher](https://github.com/MR-HosseinzadehTaher)<sup>1</sup>, [Michael B. Gotway](https://www.mayoclinic.org/biographies/gotway-michael-b-m-d/bio-20055566)<sup>2</sup>, [Jianming Liang](https://chs.asu.edu/jianming-liang)<sup>1</sup><br/>
 <sup>1 </sup>Arizona State University, <sup>2 </sup>Mayo Clinic <br/>
 International Conference on Medical Image Computing and Computer Assisted Intervention ([MICCAI 2023](https://conferences.miccai.org/2023/en/)); <br/> Domain Adaptation and Representation Transfer <br/>
 
-Adam-v1: [Paper](https://arxiv.org/pdf/2309.15358.pdf) | [Code](https://github.com/MR-HosseinzadehTaher/Eden/tree/main/Adam-v1) | [Oral Presentation](https://youtu.be/1ky57hn0aRg) 
-:trophy: ${\color{red} {\textbf{Best Paper Award (Runner-up)}}}$ 
-
+<a href='https://arxiv.org/pdf/2309.15358.pdf'><img src='https://img.shields.io/badge/Paper-PDF-purple'></a> <a href='https://github.com/MR-HosseinzadehTaher/Eden/tree/main/Adam-v1'><img src='https://img.shields.io/badge/Project-Page-Green'></a> <a href='images/BestPaper.png'><img src='https://img.shields.io/badge/Best%20Paper%20Award%20(Runner%20up)-yellow'></a> [![Oral Presentation](https://badges.aleen42.com/src/youtube.svg)](https://youtu.be/1ky57hn0aRg) 
 <br/>
+
 
 :star: ${\color{blue} {\textbf{Please download the pretrained Adam-v1 PyTorch model as follow. }}}$
 
@@ -47,15 +49,6 @@ Adam-v1: [Paper](https://arxiv.org/pdf/2309.15358.pdf) | [Code](https://github.c
 | Backbone | #Params. | Download |
 |  ----  | ----  |  ----  |
 | ResNet-50  | 25.6M | [Link](https://docs.google.com/forms/d/e/1FAIpQLSdHcnN6mLUEXebezyQZh3wE3u1RNtBBOpvjbQA8MNXXr9hdHQ/viewform?usp=sf_link) |
-
-
- <div align="center">
-
-## <img src="https://github.com/alxrm/youtube-play-icon/blob/master/art/play.gif?raw=true" alt="Play Logo" width="10%" /> <div align="center"> [ Click here to watch the paper presentation ](https://youtu.be/1ky57hn0aRg) </div>
-
-</div>
-
-<p align="center"> <img width="65%" src="images/BestPaper.png" /> </p>
 
 
 ## Citation
