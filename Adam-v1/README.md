@@ -13,21 +13,25 @@ We devise a novel self-supervised learning (SSL) strategy that underpins the dev
 ## Publication
 ### Towards Foundation Models Learned from Anatomy in Medical Imaging via Self-Supervision 
 
+
+
+:trophy: ${\color{red} {\textbf{Best Paper Award (Runner-up)}}}$ 
+
 [Mohammad Reza Hosseinzadeh Taher](https://github.com/MR-HosseinzadehTaher)<sup>1</sup>, [Michael B. Gotway](https://www.mayoclinic.org/biographies/gotway-michael-b-m-d/bio-20055566)<sup>2</sup>, [Jianming Liang](https://chs.asu.edu/jianming-liang)<sup>1</sup><br/>
 <sup>1 </sup>Arizona State University, <sup>2 </sup>Mayo Clinic <br/>
 International Conference on Medical Image Computing and Computer Assisted Intervention ([MICCAI 2023](https://conferences.miccai.org/2023/en/)); <br/> Domain Adaptation and Representation Transfer <br/>
 
-[Paper](https://arxiv.org/pdf/2309.15358.pdf) | [Code](https://github.com/MR-HosseinzadehTaher/Eden) | [Poster](http://www.cs.toronto.edu/~liang/Publications/) | [Oral Presentation](https://youtu.be/1ky57hn0aRg) 
-:trophy: ${\color{red} {\textbf{Best Paper Award (Runner-up)}}}$ 
-
+<a href='https://arxiv.org/pdf/2309.15358.pdf'><img src='https://img.shields.io/badge/Paper-PDF-purple'></a> <a href='https://github.com/MR-HosseinzadehTaher/Eden/tree/main/Adam-v1'><img src='https://img.shields.io/badge/Project-Page-Green'></a> <a href='images/BestPaper.png'><img src='https://img.shields.io/badge/Best%20Paper%20Award%20(Runner%20up)-yellow'></a> [![Oral Presentation](https://badges.aleen42.com/src/youtube.svg)](https://youtu.be/1ky57hn0aRg) 
 <br/>
 
-:star: ${\color{blue} {\textbf{Please download the pretrained Adam PyTorch model as follow. }}}$
+
+:star: ${\color{blue} {\textbf{Please download the pretrained Adam-v1 PyTorch model as follow. }}}$
 
 
-| Backbone | #Params. | Download |
-|  ----  | ----  |  ----  |
-| ResNet-50  | 25.6M | [Link](https://docs.google.com/forms/d/e/1FAIpQLSdHcnN6mLUEXebezyQZh3wE3u1RNtBBOpvjbQA8MNXXr9hdHQ/viewform?usp=sf_link) |
+Model | Backbone | #Params. | Download |
+---- | ---- | ---- | ---- |
+<img alt="Static Badge" src="https://img.shields.io/badge/Adam-Version1-blue"> | ResNet-50  | 25.6M | [Link](https://docs.google.com/forms/d/e/1FAIpQLSdHcnN6mLUEXebezyQZh3wE3u1RNtBBOpvjbQA8MNXXr9hdHQ/viewform?usp=sf_link) |
+
 
 
 ## Major results from our work
