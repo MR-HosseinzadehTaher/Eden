@@ -1,3 +1,27 @@
+We devise a novel self-supervised learning (SSL) framework that underpins the development of powerful models foundational to medical imaging via learning anatomy. Our framework not only generates **highly generalizable pretrained models, called Adam (autodidactic
+dense anatomical models)**, but also, in contrast to existing SSL methods, yields **dense anatomical embeddings, nicknamed Eve (embedding vectors)**, preserveing a semantic balance of anatomical diversity and harmony, making them semantically meaningful for anatomy understanding.
+
+<p align="center"><img src="images/Adam_Eve_2.png" /></p>
+
+## Publication
+
+### Representing Part-Whole Hierarchies in Foundation Models by Learning Localizability, Composability, and Decomposability from Anatomy via Self-Supervision
+
+[Mohammad Reza Hosseinzadeh Taher](https://github.com/MR-HosseinzadehTaher)<sup>1</sup>, [Michael B. Gotway](https://www.mayoclinic.org/biographies/gotway-michael-b-m-d/bio-20055566)<sup>2</sup>, [Jianming Liang](https://chs.asu.edu/jianming-liang)<sup>1</sup><br/>
+<sup>1 </sup>Arizona State University, <sup>2 </sup>Mayo Clinic <br/>
+IEEE/CVF Conference on Computer Vision and Pattern Recognition ([CVPR](https://cvpr.thecvf.com/))
+
+Adam-v2: [Paper](https://arxiv.org/pdf/2404.15672) | [Code](https://github.com/MR-HosseinzadehTaher/Eden/tree/main/Adam-v2) | [Oral Presentation]()
+:boom: ${\color{red} {\textbf{Accepted at CVPR 2024 [main conference]}}}$
+
+<br/>
+
+:star: ${\color{blue} {\textbf{Please download the pretrained Adam-v2 PyTorch model as follow. }}}$
+
+
+| Backbone | #Params. | Download |
+|  ----  | ----  |  ----  |
+| ConvNeXt-B | 89M | [Link](https://) |
 
 ## Requirements
 + Linux
