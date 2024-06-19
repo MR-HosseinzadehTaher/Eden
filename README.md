@@ -20,13 +20,15 @@ IEEE/CVF Conference on Computer Vision and Pattern Recognition ([CVPR](https://c
 <a href='https://arxiv.org/pdf/2404.15672'><img src='https://img.shields.io/badge/Paper-PDF-purple'></a> <a href='images/Adam_Eve_v2.png'><img src='https://img.shields.io/badge/Poster-PNG-blue'></a> <a href='https://github.com/MR-HosseinzadehTaher/Eden/tree/main/Adam-v2'><img src='https://img.shields.io/badge/Project-Page-Green'></a> [![Oral Presentation](https://badges.aleen42.com/src/youtube.svg)](https:\\youtube_link) 
 <br/>
 
-
 :star: ${\color{blue} {\textbf{Please download the pretrained Adam-v2 PyTorch model as follow. }}}$
-
 
 | Backbone | #Params. | Download |
 |  ----  | ----  |  ----  |
 | ConvNeXt-B | 89M | [Link](https://) |
+
+<p align="center"><img src="images/Adam_Eve_v2.png" /></p>
+
+--------------------------------------------------------------------------------
 
 ### Towards Foundation Models Learned from Anatomy in Medical Imaging via Self-Supervision 
 
