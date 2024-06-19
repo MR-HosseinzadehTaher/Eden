@@ -22,7 +22,7 @@ IEEE/CVF Conference on Computer Vision and Pattern Recognition ([CVPR](https://c
 
 Model | Backbone | #Params. | Download |
 ---- | ----  | ----  | ---- |
-<img alt="Static Badge" src="https://img.shields.io/badge/Adam-Version2-yellow"> | ConvNeXt-B | 89M | [Link](https://) |
+<img alt="Static Badge" src="https://img.shields.io/badge/Adam-Version2-yellow"> | ConvNeXt-B | 89M | [Link](https://docs.google.com/forms/d/e/1FAIpQLSfNcTuWOKte0ZZUckBdXzcnI4HlaZ5uRVyrHQWXqh-gWxBVgA/viewform?usp=sf_link) |
 
 ## Requirements
 + Linux
