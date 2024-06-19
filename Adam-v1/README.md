@@ -65,13 +65,13 @@ Credit to [superbar](https://github.com/scottclowe/superbar) by Scott Lowe for M
 Clone the repository and install dependencies using the following command:
 ```bash
 $ git clone https://github.com/MR-HosseinzadehTaher/Eden.git
-$ cd Eden-main/
+$ cd Eden-main/Adam-v1
 $ pip install -r requirements.txt
 ```
 
 ## Self-supervised pretraining
 ### 1. Preparing data
-We used traing set of ChestX-ray14 dataset for pretraining Adam ChestX-ray model, which can be downloaded from [this link](https://nihcc.app.box.com/v/ChestXray-NIHCC).
+We used traing set of ChestX-ray14 dataset for pretraining Adam-v1 ChestX-ray model, which can be downloaded from [this link](https://nihcc.app.box.com/v/ChestXray-NIHCC).
 
 - The downloaded ChestX-ray14 should have a directory structure as follows:
 ```
@@ -83,10 +83,10 @@ ChestX-ray14/
 ```
 We use 10% of training data for validation. We also provide the list of training and validation images in ``dataset/Xray14_train_official.txt`` and ``dataset/Xray14_val_official.txt``, respectively. The training set is based on the official split provided by ChestX-ray14 dataset. Training labels are not used during pretraining stage. The path to images folder is required for pretraining stage.
 
-### 2. Pretraining Adam
+### 2. Pretraining Adam-v1
 This implementation only supports multi-gpu, DistributedDataParallel training, which is faster and simpler; single-gpu or DataParallel training is not supported. The instance discrimination setup follows [MoCo](https://github.com/facebookresearch/moco). The checkpoints with the lowest validation loss are used for fine-tuning. We do self-supervised pretraining using ResNet-50 backbone on ChestX-ray14 using 4 NVIDIA V100 GPUs.
 
-We train Adam with three anatomical structure granulariy levels n={0,2,4}. For full training, run the provided script file (the path to training dataset must be updated throughout the run.sh file):
+We train Adam-v1 with three anatomical structure granulariy levels n={0,2,4}. For full training, run the provided script file (the path to training dataset must be updated throughout the run.sh file):
 
 ```bash
 ./run.sh
@@ -98,15 +98,15 @@ python -u main.py  /path/to/training/images --dist-url 'tcp://localhost:10002' -
 ```
 Where ./checkpoints/n2/checkpoint.pth is the path to the checkpoint of the model pretrained with n=2.
 
-## Fine-tuning Adam on downstream tasks
+## Fine-tuning Adam-v1 on downstream tasks
 For downstream tasks, we use the code provided by recent [transfer learning benchmark](https://github.com/MR-HosseinzadehTaher/BenchmarkTransferLearning) in medical imaging. 
 
-For classification tasks, a ResNet-50 encoder can be initialized with the pretrained encoder of Adam as follows:
+For classification tasks, a ResNet-50 encoder can be initialized with the pretrained encoder of Adam-v1 as follows:
 ```python
 import torchvision.models as models
 
 num_classes = #number of target task classes
-weight = #path to Adam pretrained model
+weight = #path to Adam-v1 pretrained model
 model = models.__dict__['resnet50'](num_classes=num_classes)
 state_dict = torch.load(weight, map_location="cpu")
 if "state_dict" in state_dict:
@@ -123,12 +123,12 @@ print("=> loaded pretrained model '{}'".format(weight))
 print("missing keys:", msg.missing_keys)
 ```
 
-For segmentation tasks, a U-Net can be initialized with the pre-trained encoder of Adam as follows:
+For segmentation tasks, a U-Net can be initialized with the pre-trained encoder of Adam-v1 as follows:
 ```python
 import segmentation_models_pytorch as smp
 
 backbone = 'resnet50'
-weight = #path to Adam pre-trained model
+weight = #path to Adam-v1 pre-trained model
 model=smp.Unet(backbone)
 state_dict = torch.load(weight, map_location="cpu")
 if "state_dict" in state_dict:
