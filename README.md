@@ -11,9 +11,6 @@ dense anatomical models)**, but also, in contrast to existing SSL methods, yield
 
 ### Representing Part-Whole Hierarchies in Foundation Models by Learning Localizability, Composability, and Decomposability from Anatomy via Self-Supervision
 
-<img alt="Static Badge" src="https://img.shields.io/badge/Adam-Version2-yellow">
-
-
 :boom: ${\color{red} {\textbf{Accepted at CVPR 2024 [main conference]}}}$
 
 [Mohammad Reza Hosseinzadeh Taher](https://github.com/MR-HosseinzadehTaher)<sup>1</sup>, [Michael B. Gotway](https://www.mayoclinic.org/biographies/gotway-michael-b-m-d/bio-20055566)<sup>2</sup>, [Jianming Liang](https://chs.asu.edu/jianming-liang)<sup>1</sup><br/>
@@ -25,9 +22,9 @@ IEEE/CVF Conference on Computer Vision and Pattern Recognition ([CVPR](https://c
 
 :star: ${\color{blue} {\textbf{Please download the pretrained Adam-v2 PyTorch model as follow. }}}$
 
-| Backbone | #Params. | Download |
-|  ----  | ----  |  ----  |
-| ConvNeXt-B | 89M | [Link](https://) |
+Model | Backbone | #Params. | Download |
+---- | ----  | ----  | ---- |
+<img alt="Static Badge" src="https://img.shields.io/badge/Adam-Version2-yellow"> | ConvNeXt-B | 89M | [Link](https://) |
 
 <p align="center"><img src="images/Adam_Eve_v2.png" /></p>
 
@@ -36,8 +33,6 @@ IEEE/CVF Conference on Computer Vision and Pattern Recognition ([CVPR](https://c
 --------------------------------------------------------------------------------
 
 ### Towards Foundation Models Learned from Anatomy in Medical Imaging via Self-Supervision 
-
-<img alt="Static Badge" src="https://img.shields.io/badge/Adam-Version1-blue">
 
 :trophy: ${\color{red} {\textbf{Best Paper Award (Runner-up)}}}$ 
 
@@ -52,9 +47,9 @@ International Conference on Medical Image Computing and Computer Assisted Interv
 :star: ${\color{blue} {\textbf{Please download the pretrained Adam-v1 PyTorch model as follow. }}}$
 
 
-| Backbone | #Params. | Download |
-|  ----  | ----  |  ----  |
-| ResNet-50  | 25.6M | [Link](https://docs.google.com/forms/d/e/1FAIpQLSdHcnN6mLUEXebezyQZh3wE3u1RNtBBOpvjbQA8MNXXr9hdHQ/viewform?usp=sf_link) |
+Model | Backbone | #Params. | Download |
+---- | ---- | ---- | ---- |
+<img alt="Static Badge" src="https://img.shields.io/badge/Adam-Version1-blue"> | ResNet-50  | 25.6M | [Link](https://docs.google.com/forms/d/e/1FAIpQLSdHcnN6mLUEXebezyQZh3wE3u1RNtBBOpvjbQA8MNXXr9hdHQ/viewform?usp=sf_link) |
 
 
 ## Citation
