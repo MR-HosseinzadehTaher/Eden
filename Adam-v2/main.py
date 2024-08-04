@@ -9,6 +9,7 @@ import json
 from pathlib import Path
 from trainer_l import train_l
 from trainer_lcd import train_lcd
+import utils
 
 def get_args_parser():
     parser = argparse.ArgumentParser('Adam-v2', add_help=False)
