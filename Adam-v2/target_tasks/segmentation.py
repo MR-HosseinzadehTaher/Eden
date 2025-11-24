@@ -144,20 +144,16 @@ def build_model(conf):
 
             msg = model.backbone.load_state_dict(checkpoint_model, strict=False)
             print('Loaded with msg: {}'.format(msg))
-
     if conf.optimizer == 'adamw':
         optimizer = optim.AdamW(model.parameters(), lr=conf.lr)
     elif conf.optimizer == 'adam':
         optimizer = optim.Adam(model.parameters(), lr=conf.lr)
     else:
         optimizer = optim.SGD(model.parameters(), lr=conf.lr, weight_decay=0, momentum=0.9, nesterov=False)
-    model = model.double()
-
     if torch.cuda.is_available():
         model = torch.nn.DataParallel(model, device_ids=[i for i in range(torch.cuda.device_count())])
         model = model.cuda()
         cudnn.benchmark = True
-
     loss_scaler = NativeScaler()
     return model, optimizer,loss_scaler
 
@@ -168,25 +164,20 @@ def train_one_epoch(model,train_loader, optimizer, loss_scaler, epoch,criterion 
     losses = AverageMeter()
     criterion = criterion
     end = time.time()
-
     for idx, (img,mask) in enumerate(train_loader):
         data_time.update(time.time() - end)
         bsz = img.shape[0]
-
-
-        img = img.double().cuda(non_blocking=True)
-        mask = mask.double().cuda(non_blocking=True)
-        outputs = torch.sigmoid(model(img))
-
-        if outputs.size()[-1] != mask.size()[-1]:
-            outputs = F.interpolate(outputs, size=args.img_size, mode='bilinear')
-
-        loss = criterion(mask, outputs)
+        img = img.float().cuda(non_blocking=True)
+        mask = mask.float().cuda(non_blocking=True)
+        with torch.cuda.amp.autocast():
+            outputs = torch.sigmoid(model(img))
+            if outputs.size()[-1] != mask.size()[-1]:
+                outputs = F.interpolate(outputs, size=args.img_size, mode='bilinear')
+            loss = criterion(mask, outputs)
         if not math.isfinite(loss.item()):
             print("Loss is {}, stopping training".format(loss.item()), file=args.log_writter)
             sys.exit(1)
         losses.update(loss.item(), bsz)
-
         optimizer.zero_grad()
         is_second_order = hasattr(optimizer, 'is_second_order') and optimizer.is_second_order
         loss_scaler(loss, optimizer, clip_grad=None,
@@ -214,12 +205,13 @@ def evaluation(model, val_loader, epoch,criterion = torch_dice_coef_loss):
     with torch.no_grad():
         for idx, (img, mask) in enumerate(val_loader):
             bsz = img.shape[0]
-            img = img.double().cuda(non_blocking=True)
-            mask = mask.double().cuda(non_blocking=True)
-            outputs = torch.sigmoid(model(img))
-            if outputs.size()[-1] != mask.size()[-1]:
-                outputs = F.interpolate(outputs, size=args.img_size, mode='bilinear')
-            loss = criterion(mask, outputs)
+            img = img.float().cuda(non_blocking=True)
+            mask = mask.float().cuda(non_blocking=True)
+            with torch.cuda.amp.autocast():
+                outputs = torch.sigmoid(model(img))
+                if outputs.size()[-1] != mask.size()[-1]:
+                    outputs = F.interpolate(outputs, size=args.img_size, mode='bilinear')
+                loss = criterion(mask, outputs)
             if not math.isfinite(loss.item()):
                 print("Loss is {}, stopping training".format(loss.item()), file=args.log_writter)
                 sys.exit(1)
@@ -240,7 +232,6 @@ def test(test_loader, conf):
     checkpoint = torch.load(os.path.join(args.model_path, 'ckpt.pth'), map_location='cpu')
     checkpoint_model = {k.replace("module.", ""): v for k, v in checkpoint['model'].items()}
     model.load_state_dict(checkpoint_model)
-    model = model.double()
     if torch.cuda.is_available():
         model = torch.nn.DataParallel(model, device_ids=[i for i in range(torch.cuda.device_count())])
         model = model.cuda()
@@ -251,9 +242,9 @@ def test(test_loader, conf):
         test_p = None
         test_y = None
         for idx, (img, mask) in enumerate(test_loader):
+            img = img.float().cuda(non_blocking=True)
+            mask = mask.float().cuda(non_blocking=True)
             with torch.cuda.amp.autocast():
-                img = img.double().cuda(non_blocking=True)
-                mask = mask.double().cuda(non_blocking=True)
                 outputs = torch.sigmoid(model(img))
                 if outputs.size()[-1] != mask.size()[-1]:
                     outputs = F.interpolate(outputs, size=args.img_size, mode='bilinear')
