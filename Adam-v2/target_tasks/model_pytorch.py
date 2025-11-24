@@ -56,7 +56,6 @@ def Classifier_model(arch_name, num_class, conv=None, weight=None, linear_classi
                     assert set(_msg.missing_keys) == {"classifier.weight", "classifier.bias"}
                 else:
                     assert set(_msg.missing_keys) == {"classifier.0.weight", "classifier.0.bias"}
-
     state_dict = None
     if weight.lower() == "random"  or weight.lower() == "none":
         state_dict = model.state_dict()
@@ -93,7 +92,7 @@ def Classifier_model(arch_name, num_class, conv=None, weight=None, linear_classi
         print("=> loaded pre-trained model '{}'".format(weight))
         print("missing keys:", msg.missing_keys)
 
-    elif arch_name.lower().startswith("convnext") and (not arch_name.lower().startswith("convnextv2")) and (weight is not None) and ("random" not in weight.lower()):
+    elif arch_name.lower().startswith("convnext") and (weight is not None) and ("random" not in weight.lower()):
         import re
         print("=> loading checkpoint '{}'".format(weight))
         state_dict = torch.load(weight, map_location="cpu")
@@ -106,8 +105,6 @@ def Classifier_model(arch_name, num_class, conv=None, weight=None, linear_classi
             state_dict = state_dict["model"]
         elif "student" in state_dict:
             state_dict = state_dict["student"]
-
-
         state_dict = {k.replace("module.", ""): v for k, v in state_dict.items()}
         state_dict = {k.replace("backbone.", ""): v for k, v in state_dict.items()}
         out_dict = {}
@@ -128,7 +125,6 @@ def Classifier_model(arch_name, num_class, conv=None, weight=None, linear_classi
                 model_shape = model.state_dict()[k].shape
                 v = v.reshape(model_shape)
             out_dict[k] = v
-
         for k in list(out_dict.keys()):
             if k.startswith('head'):
                 del out_dict[k]
@@ -136,11 +132,7 @@ def Classifier_model(arch_name, num_class, conv=None, weight=None, linear_classi
         print("=> loaded pre-trained model '{}'".format(weight))
         print(msg)
 
-    elif  (arch_name.lower().startswith("resnet")) and ("chess" in weight.lower() or "lvmmed" in weight.lower() or "chestxray14" in weight.lower() or "chexpert" in weight.lower() or  "places365" in weight.lower() or "coco" in weight.lower() or "vrl" in weight.lower() or "pcrl" in weight.lower() or "dc" in weight.lower() or "best_checkpoint" in weight.lower() or "checkpoint" in weight.lower()  or "ssl_in_domain" in weight.lower() or "ssl_imagenet" in weight.lower() or "restoration" in weight.lower() or  "byol" in weight.lower() or "deepcluster-v2" in weight.lower() or \
-            "infomin" in weight.lower() or "insdis" in weight.lower() or "moco-v1" in weight.lower() or \
-            "moco-v2" in weight.lower() or "pirl" in weight.lower() or "pcl-v1" in weight.lower() or \
-            "pcl-v2" in weight.lower() or "sela-v2" in weight.lower() or "simclr-v1" in weight.lower() or \
-            "simclr-v2" in weight.lower() or "swav" in weight.lower() or "barlowtwins" in weight.lower() or "imagenet21k" in weight.lower() or "simsiam" in weight.lower() or  "obow" in weight.lower() or "simsiam" in weight.lower() or "dino" in weight.lower() or "clsa" in weight.lower()) and ("resnet50_ssl_transfer" not in weight.lower()):
+    elif  (arch_name.lower().startswith("resnet")):
         if os.path.isfile(weight):
             print("=> loading checkpoint '{}'".format(weight))
             state_dict = torch.load(weight, map_location="cpu")
@@ -148,7 +140,7 @@ def Classifier_model(arch_name, num_class, conv=None, weight=None, linear_classi
                 state_dict = state_dict["state_dict"]
             elif "model" in state_dict:
                 state_dict = state_dict["model"]
-            elif "teacher" in state_dict:  # for dino
+            elif "teacher" in state_dict:  
                 state_dict = state_dict["teacher"]
             state_dict = {k.replace("module.", ""): v for k, v in state_dict.items()}
             state_dict = {k.replace("backbone.", ""): v for k, v in state_dict.items()}
